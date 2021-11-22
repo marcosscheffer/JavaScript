@@ -37,7 +37,7 @@ function verificar() {
             } else if (idade >= 21 && idade <= 40) {
                 img.setAttribute('src', 'midia/adult_F.png')
             } else if (idade >= 41 && idade <= 60) {
-                img.setAttribute('src', 'midia/old_w.png')
+                img.setAttribute('src', 'midia/old_F.png')
             } else if (idade >=61) {
                 img.setAttribute('src', 'midia/old_w.png')
             }
