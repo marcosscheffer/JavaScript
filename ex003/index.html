@@ -13,18 +13,21 @@
     </header>
     <section>
         <div>
-            Vamos analizar sua idade
+            <p><input type="number" id="ano" min="0"></p>
+            <p><input type="radio" id="masc">
+                <label for="masc">Masculino</label>
+                <input type="radio" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+            <input type="button" value="verificar" onclick="verificar()">
+            </p>
         </div>
-        <div>
-            data de nascimento:
-            <input type="number" id="year">
-            <input type="button" id="add">
-        </div>
-        <div>
-            <img src="" alt="">
+        <div id="img">
+            <img src="midia/null.png" alt="">
         </div>
     </section>
-    <footer>&copy; MarcosV.SConceição                                                                                                                         </footer>
+    <footer>&copy; MarcosV.SConceição</footer>
     <script src="script.js"></script>
 </body>
 </html>
