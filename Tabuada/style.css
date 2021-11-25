@@ -1,0 +1,22 @@
+body {background-color: aqua;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;}
+header {font-size: 20px;
+margin: auto;
+text-align: center;}
+section {margin: auto;
+width: 200px;
+background-color: white;
+padding: 15px;
+border-radius: 10px;
+border-color: rgb(165, 88, 165);
+border-style: solid;
+border-width: 1px;
+box-shadow: 5px 5px 10px rgb(75, 75, 75);
+}
+footer {text-align: center;
+margin-top: 10px;
+font-style: italic;}
+input#txtn {width: 50px;}
+select {padding: 15px;}
+
