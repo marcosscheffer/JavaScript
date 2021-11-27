@@ -1,25 +1,27 @@
 let lista = []
 function add() {
-    let num = document.getElementById("num").value
+    let num = document.getElementById("num")
     let list = document.getElementById("list")
 
-    if (num.length == 0) {
+    if (num.value.length == 0) {
         alert("Campo vazio!")
-    } else if (num > 100) {
+    } else if (num.value > 100) {
         alert("Número muito grande!")
     } else if (lista.length == 0) {
         let num1 = document.createElement("option")
-        num1.text = `Valor ${num} adicionado!`
+        num1.text = `Valor ${num.value} adicionado!`
         list.appendChild(num1)
-        lista.push(num)
-    } else if (lista.indexOf(num) == -1) {
+        lista.push(num.value)
+    } else if (lista.indexOf(num.value) == -1) {
         let num1 = document.createElement("option")
-        num1.text = `Valor ${num} adicionado!`
+        num1.text = `Valor ${num.value} adicionado!`
         list.appendChild(num1)
-        lista.push(num)
-    } else if (lista.indexOf(num) != -1) {
+        lista.push(num.value)
+    } else if (lista.indexOf(num.value) != -1) {
         alert("Valor já adicionado!")
     }
+    num.value = ``
+    num.focus()
 }
 function analise() {
     function maior(n) {
