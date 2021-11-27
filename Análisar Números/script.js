@@ -64,9 +64,13 @@ function analise() {
         return soma
     }
     let txt = document.getElementById("res")
-    txt.innerHTML += `O maior número é ${maior(lista)}<br>`
-    txt.innerHTML += `O menor número é ${menor(lista)}<br>`
-    txt.innerHTML += `A média dos números é ${media(lista)}<br>`
-    txt.innerHTML += `A soma dos números é ${soma(lista)}<br>`
-    txt.innerHTML += `Foram informados ${lista.length} números!`
+    if (lista.length == 0) {
+        txt.innerHTML = `Por favor adicione valores antes de análisar!`
+    }else{
+        txt.innerHTML = `Foram informados ${lista.length} números!<br>`
+        txt.innerHTML += `O maior número é ${maior(lista)}<br>`
+        txt.innerHTML += `O menor número é ${menor(lista)}<br>`
+        txt.innerHTML += `A média dos números é ${media(lista)}<br>`
+        txt.innerHTML += `A soma dos números é ${soma(lista)}<br>`
+    }
 }
